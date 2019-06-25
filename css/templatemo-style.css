@@ -38,8 +38,8 @@ h2 span
 #about, #team, #service,
 #portfolio, #contact
 	{
-		padding-top: 60px;
-		padding-bottom: 40px;
+		padding-top: 30px;
+		padding-bottom: 30px;
 	}
 /* end about team service portfolio contact */
 
@@ -129,8 +129,8 @@ h2 span
 /* start header */
 header
 	{
-		min-height: 20px;
-		padding-top: 18px;
+		min-height: 15px;
+		padding-top: 10px;
 		padding-bottom: 10px;
 	}
 header .fa
@@ -170,22 +170,36 @@ header .social-icon li a
 		box-shadow: none;
 		margin: 0 !important;
 	}
+
 .navbar-default .navbar-brand
-	{
+	{	
+	    color:#ffffff;
 		font-weight: 500;
 		font-size: 30px;
 		height: 70px;
 		line-height: 40px;
 		padding: 12px 0px 0px 12px;
 	}
+	.language{
+		display:inline;
+		
+	}
+	
 .navbar-default .navbar-nav li a
 	{
 		font-weight: bold;
-		font-size: 13px;
+		font-size: 15px;
 		height: 70px;
 		line-height: 40px;
+		color: #fff; 
 	}
-
+	a.fa.fa-facebook{
+		background: #3578E5;
+	}
+	a.fa.fa-youtube{
+		background:red;
+	}
+	
 .navbar-default .navbar-nav > li > a.current { 
 	color: #28A7E9; 
 }
@@ -202,13 +216,29 @@ header .social-icon li a
 /* end navigation */
 
 /* start home */
+
+
+@media screen and (max-width: 2000px) {    
+	 .img{
+		width: auto;
+		height: auto;
+	}
+}
+@media screen and (max-width: 576px) {
+	.img{
+		width: auto;
+		height: auto;
+	}
+}
+
+
 #home
 	{
 		background: url('../images/home-bg.jpg') no-repeat;
 		background-size: cover;
-		padding-top: 160px;
+		padding-top: 150px;
 		padding-bottom: 100px;
-		min-height: 650px;
+		min-height: 600px;
 	}
 #home h1
 	{
@@ -216,30 +246,114 @@ header .social-icon li a
 		font-size: 70px;
 		padding-bottom: 10px;
 	}
+#home .btn
+	{
+		-moz-box-shadow: 3px 4px 0px 0px #29bbff;
+	-webkit-box-shadow: 3px 4px 0px 0px #29bbff;
+	box-shadow: 3px 4px 0px 0px #29bbff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #00a2ff), color-stop(1, #0688fa));
+	background:-moz-linear-gradient(top, #00a2ff 5%, #0688fa 100%);
+	background:-webkit-linear-gradient(top, #00a2ff 5%, #0688fa 100%);
+	background:-o-linear-gradient(top, #00a2ff 5%, #0688fa 100%);
+	background:-ms-linear-gradient(top, #00a2ff 5%, #0688fa 100%);
+	background:linear-gradient(to bottom, #00a2ff 5%, #0688fa 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00a2ff', endColorstr='#0688fa',GradientType=0);
+	background-color:#00a2ff;
+	-moz-border-radius:18px;
+	-webkit-border-radius:18px;
+	border-radius:18px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:24px;
+	font-weight:bold;
+	padding:13px 66px;
+	text-decoration:none;
+	text-shadow:3px 0px 8px #263666;
+	}
+	#thongtinthem .myButton2 span{
+		color:red;
+	}
+	.btn-danger {
+    color: #fff;
+	width: 300px;
+    font-weight: bold;
+    font-size: 20px;
+    border: 5px;
+    background-color: #f6332e;
+    border-color: #fafafa;
+}
+.btndk{
+	text-align:center;
+}
+#home .btn:hover
+	{
+		background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0688fa), color-stop(1, #00a2ff));
+	background:-moz-linear-gradient(top, #0688fa 5%, #00a2ff 100%);
+	background:-webkit-linear-gradient(top, #0688fa 5%, #00a2ff 100%);
+	background:-o-linear-gradient(top, #0688fa 5%, #00a2ff 100%);
+	background:-ms-linear-gradient(top, #0688fa 5%, #00a2ff 100%);
+	background:linear-gradient(to bottom, #0688fa 5%, #00a2ff 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0688fa', endColorstr='#00a2ff',GradientType=0);
+	background-color:#0688fa;
+	text-decoration:none;
+	}	
+	
 #home h1 span
 	{
 		color: #28a7e9;
 		font-weight: bold;
 	}
-#home .btn
-	{
-		background: transparent;
-		border-radius: 2px;
-		color: #fff;
-		font-size: 16px;
-		font-weight: bold;
-		margin-top: 20px;
-		width: 180px;
-		height: 60px;
-		padding-top: 18px;
-		-webkit-transition: all 0.4s ease-in-out;
-		        transition: all 0.4s ease-in-out;
-	}
-#home .btn:hover
-	{
-		background: #28a7e9;
-		border-color: transparent;
-	}
+
+.myButton2 {
+	-moz-box-shadow:inset 0px -3px 7px 0px #29bbff;
+	-webkit-box-shadow:inset 0px -3px 7px 0px #29bbff;
+	box-shadow:inset 0px -3px 7px 0px #29bbff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2dabf9), color-stop(1, #0688fa));
+	background:-moz-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+	background:-webkit-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+	background:-o-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+	background:-ms-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2dabf9', endColorstr='#0688fa',GradientType=0);
+	background-color:#2dabf9;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #0b0e07;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:30px;
+	font-weight:bold;
+	padding:19px 76px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+	width:100%;
+}
+.myButton2:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0688fa), color-stop(1, #2dabf9));
+	background:-moz-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background:-webkit-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background:-o-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background:-ms-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0688fa', endColorstr='#2dabf9',GradientType=0);
+	background-color:#0688fa;
+}
+.myButton2:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+
+
 .element {
 	height: 60px;
 	font-size: 16px;
@@ -304,17 +418,18 @@ header .social-icon li a
 /* start service */
 #service .col-md-4
 	{
+		
 		padding: 40px;
 		-webkit-transition: all 0.4s ease-in-out;
 		        transition: all 0.4s ease-in-out;
 	}
 #service .col-md-4:hover
 	{
-		background: #505050;
+		background: #5bc0de;
 	}
 #service .active
 	{
-		background: #505050;
+		background: #8f4197;
 		padding: 40px;
 	}
 #service .fa
@@ -391,6 +506,12 @@ header .social-icon li a
 		cursor: pointer;
 		opacity: 0.8;
 	}
+
+img.img-responsive {
+    height: 300px;
+    width: 300px;
+	
+}
 /* end portfolio */
 
 /* start contact */
