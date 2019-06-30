@@ -5,7 +5,7 @@ http://www.templatemo.com/preview/templatemo_450_awesome
 
 body
 	{
- 		background: #8f4197;
+ 		background: #9c1fd1;
  		color: #ffffff;
 		 font-family: 'Nunito Sans';
 		font-weight: bold;
@@ -255,27 +255,35 @@ header .social-icon li a
 	}
 #home h1
 	{
-		font-family: "Comic Sans MS", cursive, sans-serif;
+
 		font-weight: bold;
-		font-size: 50px;
+		font-size: 60px;
 		padding-bottom: 10px;
 	}
 	#home .btn
 	{
 		
-			background:url('../images/background_btn.jpg') no-repeat;
-			border-radius: 2px;
-			border-width: 3px;
-			color: #ffffff;
-			font-size: 25px;
-			font-weight: bold;
-			margin-top: 20px;
-			width: 300px;
-			height: 70px;
-			padding-top: 18px;
-			-webkit-transition: all 0.4s ease-in-out;
-			transition: all 0.4s ease-in-out;
+background:url('../images/background_btn.jpg') no-repeat;
 		
+border-width: 3px;
+		
+color: #ffffff;
+		
+font-size: 25px;
+		
+font-weight: bold;
+		
+margin-top: 20px;
+		
+width: 300px;
+		
+height: 70px;
+		
+padding-top: 18px;
+		
+-webkit-transition: all 0.4s ease-in-out;
+		
+transition: all 0.4s ease-in-out;
 	}
 	#home .dangky{
 		padding-top:300px;
@@ -392,10 +400,10 @@ header .social-icon li a
 /* start team */
 #team .team-wrapper
 	{
-		background: #404040;
+		background: #3a3a3a;
 		padding-bottom: 10px;
 		-webkit-transition: all 0.4s ease-in-out;
-		        transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out;
 		position: relative;
 	}
 #team .team-wrapper:hover
@@ -414,6 +422,10 @@ header .social-icon li a
 		display: block;
 		font-weight: bold;
 		padding-bottom: 12px;
+	}
+	.team-des h4{
+		text-align: center;
+		font-weight: bold;
 	}
 /* end team */
 
@@ -461,7 +473,7 @@ header .social-icon li a
 	}
 #portfolio .col-md-3
 	{
-		padding: 0px;
+		padding: 5px;
 	}
 	.portfolio-thumb, 
 	.portfolio-overlay {
@@ -471,7 +483,7 @@ header .social-icon li a
 	{
 		overflow: hidden;
 		padding: 0;
-		margin: 0 auto;
+		margin: 5px;
 	}
 #portfolio .portfolio-thumb .portfolio-overlay
 	{
@@ -510,16 +522,19 @@ header .social-icon li a
 	}
 
 img.img-responsive {
-    height: 300px;
-    width: 300px;
-	
+    height: auto;
+    width: auto;
 }
 /* end portfolio */
 
 /* start contact */
 #contact
 	{
-		background: #202020;
+		
+			background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../images/bg-form-3.jpg);
+			background-size: cover;
+			background-position: center;
+		
 	}
 #contact .form-control
 	{
@@ -577,6 +592,8 @@ img.img-responsive {
 		margin-right: 10px;
 		margin-bottom: 10px;
 	}
+	
+	
 /* end contact */
 
 /* start copyright */
@@ -727,7 +744,7 @@ img.img-responsive {
 	display: block;
   }
   #countdown span {
-	  border: 1px solid white;
+	border: 1px solid white;
 	background: #fc7a01;
 	color: #FFF;
 	font-size: 25px;
@@ -741,9 +758,50 @@ img.img-responsive {
   #countdown span:last-child {
 	border-right: 1px solid #313233;
   }
-  #about{
-	background: url('../images/background_about.jpg') no-repeat;
-  }
+ 
   #timer{
-	background: url('../images/background_about.jpg') no-repeat;
+	background: linear-gradient( rgba(242, 230, 230, 0.7), rgba(255, 255, 255, 0.7) ), url(../images/background_about.jpg);
+	background-size: cover;
+	background-position: center;
+
   }
+  .student-price {
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
+    background-color: #4285f4;
+    color: #fff;
+}
+  .ticket-student{
+	transform: skewX(-25deg);
+   display: block;
+    justify-content: space-between;
+    align-items: center;
+    font-family: opensand-extrabold;
+	text-align: center;
+    font-size: 35px;
+    background: url('https://i.ytimg.com/vi/_TVMVbTC0U0/maxresdefault.jpg');
+    background-size: contain;
+    background-position: center;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.11);}
+	a.xemthem {
+		text-decoration: none;
+		color: white;
+	}
+#video{
+	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../images/bg-form-3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#about
+	{
+		
+		background: url('../images/about.jpg') no-repeat;
+		background-size: 100%;
+		padding-top: 150px;
+		padding-bottom: 100px;
+		min-height: 600px;
+	}
+
+
+	
