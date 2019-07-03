@@ -12,6 +12,12 @@ body
  		overflow-x: hidden; /* prevent horizontal scrollbar from appearing */
  }
 
+body#top {}
+
+.thongtinsukien {
+    margin-left: 810px;
+}
+
 .newsimage img {
     height: 900px;
     width: 1080px;
@@ -352,7 +358,7 @@ header .social-icon li a
 
 #home
 	{		
-		min-height: 600px;
+		
 	}
 #home h1
 	{
@@ -382,8 +388,9 @@ padding-top: 10px;
 		
 transition: all 0.4s ease-in-out;
 	}
-	#home .dangky{
-		padding-top:300px;
+	.dangky{
+	margin-bottom: 200px;
+	margin-left: -1500px;
 	}
 #home .btn:hover
 	{
