@@ -12,6 +12,22 @@ body
  		overflow-x: hidden; /* prevent horizontal scrollbar from appearing */
  }
 
+.btndk2 a.btn.btn-danger {
+    background: #df814a;
+}
+
+.btndk2 btn {
+    background: #df814a;
+}
+
+.btndk3 {
+    margin-left: 90px;
+}
+
+.btndk1 {
+    margin-right: 150px;
+}
+
 body#top {}
 
 .thongtinsukien {
@@ -401,14 +417,12 @@ transition: all 0.4s ease-in-out;
 		color:red;
 	}
 	.btn-danger {
-    transform: skewX(-25deg);
     color: #fff;
-    height: 60px;
-    width: 300px;
     margin-left: -10px;
     font-weight: bold;
-    font-size: 25px;
-    background: url('../images/backgound_btn.jpg');
+    font-size: 20px;
+    background: #7004ba;
+    margin: -15px;
 }
 .btndk{
 	text-align:center;
