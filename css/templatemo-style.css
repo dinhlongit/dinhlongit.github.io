@@ -7,13 +7,118 @@ body
 	{
  		background: #fafafa;
  		color: #ffffff;
-		 font-family: 'Nunito Sans';
-		font-weight: bold;
-		overflow-x: hidden; /* prevent horizontal scrollbar from appearing */
-	}
+ 		font-family: 'Nunito Sans';
+ 		font-weight: 500;
+ 		overflow-x: hidden; /* prevent horizontal scrollbar from appearing */
+ }
+
+.newsimage img {
+    height: 900px;
+    width: 1080px;
+}
+
+.checkin u {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.checkin b {
+    color: #0688fa;
+}
+
+.checkin {
+    padding-left: 20px;
+    background: #F5F5F5;
+}
+
+.checkin i {
+    font-weight: bold;
+    color: #23A8E8;
+    font-size: large;
+}
+
+.static_block h3 {
+    color: #23A8E8;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.static_block {
+    color: #333;
+    text-align: left;
+    font-family: 'arial', sans-serif;
+    font-size: 18px;
+}
+.giainhi {
+    background: #50ebd6
+}
+.giainhat {
+    background: #7004ba;
+}
+.giaiba {
+    background: #df5858;
+}
+.giai{
+padding-left: 100px;
+padding-right: 100px;
+}
+
+thead {BACKGROUND: burlywood;}
+
+.static_block p:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+.static_block p.image {
+    text-align: center;
+}
+
+.tab-content {
+    border: 2px solid #fafafa;
+    padding: 15px;
+}
+
+.tab-content .tab-item.active {
+    display: block;
+}
+
+.tab-content .tab-item {
+    clear: both;
+    display: none;
+}
+
+
+ul.nav.nav-tabs {
+    background: #7004ba;
+}
+
+p.thoigian {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.thoigian {
+    margin-top: -150px;
+    margin-left: 80px;
+}
+
+p.xemthem {
+    font-weight: bold;
+    text-align: center;
+    font-size: x-large;
+    padding-top: 30px;
+}
+
+.ngaybatdau {font-feature-settings: normal;}
 	
 a {
-	color: #47C6F8;
+	color: #ffffff;
+}
+
+a:hover {
+    text-decoration: none;
 }
 	
 a:hover {
@@ -246,11 +351,7 @@ header .social-icon li a
 
 
 #home
-	{
-		background: url('../images/anhbiamoi.jpg') no-repeat;
-		background-size: cover;
-		padding-top: 150px;
-		padding-bottom: 100px;
+	{		
 		min-height: 600px;
 	}
 #home h1
@@ -263,23 +364,19 @@ header .social-icon li a
 	#home .btn
 	{
 		
-background:url('../images/background_btn.jpg') no-repeat;
-		
 border-width: 3px;
 		
-color: #ffffff;
-		
-font-size: 25px;
+font-size: 30px;
 		
 font-weight: bold;
 		
 margin-top: 20px;
 		
-width: 300px;
+width: 350px;
 		
 height: 70px;
 		
-padding-top: 18px;
+padding-top: 10px;
 		
 -webkit-transition: all 0.4s ease-in-out;
 		
@@ -290,7 +387,7 @@ transition: all 0.4s ease-in-out;
 	}
 #home .btn:hover
 	{
-		background: #28a7e9;
+		background: #970cc7;
 		border-color: transparent;
 	}
 	#thongtinthem .myButton2 span{
@@ -522,6 +619,7 @@ transition: all 0.4s ease-in-out;
 	}
 
 img.img-responsive {
+    border: 2px solid #970cc7;
     height: auto;
     width: auto;
 }
@@ -681,15 +779,14 @@ img.img-responsive {
 	#home
 		{
 			min-height: 300px;
-			padding-top: 80px;
-			padding-bottom: 60px;
+		
 		}
 	#home h1
 		{
 			font-size: 52px;
 		}
 
-	.templatemo-nav {
+	.templatemo-nav{
 		position: fixed;
     	top: 0;
 	}
@@ -734,37 +831,41 @@ img.img-responsive {
 		}
 
 }
+
+
+
 /* end 360 media quires */
 #countdown {
-	margin-top: -40px;
+	margin-top: -30px;
 	width: 100%;
+	margin-left: 80px;
 	}
   label {
 	clear: both;
 	display: block;
+	font-family: 'Saira Semi Condensed';
+	font-size: 20px;
+	text-align: left;
   }
   #countdown span {
-	border: 1px solid white;
-	background: #fc7a01;
+	font-family: 'Saira Semi Condensed';
 	color: #FFF;
-	font-size: 25px;
+	font-size: 50px;
 	font-weight: bold;
 	text-align: center;
-	width: 25%;
 	display: block;
 	float: left;
-	border-right: 1px solid #FFF;
+	
+	
   }
-  #countdown span:last-child {
-	border-right: 1px solid #313233;
-  }
- 
-  #timer{
+  
+#edittimer {
 	background: linear-gradient( rgba(242, 230, 230, 0.7), rgba(255, 255, 255, 0.7) ), url(../images/background_about.jpg);
 	background-size: cover;
 	background-position: center;
+}
 
-  }
+
   .student-price {
     width: 100%;
     font-size: 35px;
@@ -773,7 +874,7 @@ img.img-responsive {
     color: #fff;
 }
   .ticket-student{
-	transform: skewX(-25deg);
+	
    display: block;
     justify-content: space-between;
     align-items: center;
@@ -806,4 +907,25 @@ img.img-responsive {
 		background: #ffffff;
 	}
 
+	.timertrai {
+		z-index: 1;
+		position: relative;
+		width: 100%;
+		height: 0;
+		border-right: 80px solid transparent;
+		border-top: 150px solid #df814a;
 	
+	
+	}
+	.timerphai{
+		z-index: 0;
+		position: relative;
+		background: #7004ba;
+		height: 100px;
+		width: 30%;
+		margin-left: -55px;
+	}
+	.timer1{
+		display: flex;
+	}
+
