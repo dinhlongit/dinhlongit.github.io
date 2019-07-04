@@ -642,7 +642,7 @@ transition: all 0.4s ease-in-out;
 img.img-responsive {
     border: 2px solid #970cc7;
     height: auto;
-    width: auto;
+    max-width: 100%;
 }
 /* end portfolio */
 
