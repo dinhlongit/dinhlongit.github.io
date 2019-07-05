@@ -95,6 +95,14 @@ if (validateEmail == false) {
 checkvalid = 0;
 }
 }  
+if ($('#saleRule').val() == ''){
+checkvalid = 0;
+}
+if ($('#masv').val() == ''){
+checkvalid = 0;
+}
+
+
 			   if (checkvalid==1){
 			   
 			   
@@ -112,7 +120,7 @@ checkvalid = 0;
                              alert('Đăng Ký Chưa Thành Công ! Vui Lòng Thử Lại Hoặc Gọi Điện Cho Chúng Tôi!');
                           }else{
                              alert('Bạn Đã Đăng Ký Thành Công ! Cảm ơn bạn!');
-							 location.href="https://dinhlongit.github.io/";
+							 location.href="./";
                           }
                }
     });
@@ -355,15 +363,31 @@ checkvalid = 0;
               </div>
               <div class="col-sm-6">
                 <div class="form-group bmd-form-group is-filled">
-                  <label class="bmd-label-static">Mã ưu đãi (Nếu Có) :</label>
+                  <label class="bmd-label-static"><span class="text-danger">*</span> Trường:</label>
                   <div class="add-custom-form">
                     <div class="input-md">
-                      <input type="text" class="form-control" id="saleRule" name="saleRule">
+                      <input type="text" class="form-control" id="saleRule" name="Truong">
                     </div>
                     <div class="cr-form text-warning" data-toggle="tooltip" title="" id="saleAgree" data-original-title="Xác nhận mã"></div>
                   </div>
                   <p id="validateSaleNull" class="text-danger validate-text-form" style="display: none;">Bạn Chưa Nhập Mã</p>
                   <p id="validateSale" class="text-danger validate-text-form" style="display: none;">Mã Tham Gia Không Chính Xác</p>
+                </div>
+              </div>
+			  
+			  <div class="col-sm-6">
+                <div class="form-group bmd-form-group is-filled">
+                  <label class="bmd-label-static"><span class="text-danger">*</span> Lớp :</label>
+                  <input type="text" class="form-control" id="lophoc" name="Lop" required="">
+                  <p id="validateAddress" class="text-danger validate-text-form" style="display: none;">Trường Địa Chỉ là bắt buộc</p>
+                </div>
+              </div>
+			  
+			  <div class="col-sm-6">
+                <div class="form-group bmd-form-group is-filled">
+                  <label class="bmd-label-static"><span class="text-danger">*</span> MSSV :</label>
+                  <input type="text" class="form-control" id="masv" name="Ma_SV" required="">
+                  <p id="validateAddress" class="text-danger validate-text-form" style="display: none;">Trường Địa Chỉ là bắt buộc</p>
                 </div>
               </div>
               

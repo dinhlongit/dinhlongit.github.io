@@ -1,4 +1,4 @@
-/*
+﻿/*
 Awesome Template
 http://www.templatemo.com/preview/templatemo_450_awesome
 */
@@ -373,7 +373,8 @@ header .social-icon li a
 
 
 #home
-	{		
+	{
+		width:100%;		
 		
 	}
 #home h1
@@ -797,10 +798,31 @@ img.img-responsive {
 
 /* start 768 media quires */
 @media only screen and ( max-width: 767px ) {
+	#about{
+		width:100%;
+	}
+	#video{
+		width:100%;
+	}
+
+	#edittimer{
+		width:100%;
+	}
+	#discount{
+		width:100%;
+	}
+	#edittimer p.thoigian{
+		padding:5px;
+		font-size:26px;
+		font-weight: bold;
+	
+	}
+
+
+	
 	#home
 		{
-			min-height: 300px;
-		
+		width:100%;
 		}
 	#home h1
 		{
@@ -836,12 +858,27 @@ img.img-responsive {
 
 /* start 360 media quires */
 @media only screen and ( max-width: 360px ) {
+	#about{
+		width:100%;
+	}
+	#edittimer{
+		width:100%;
+	}
+	#video{
+		width:100%;
+	}
+
+	#discount{
+		width:100%;
+	}
+	
 	header .social-icon
 		{
 			text-align: left;
 		}
 	#home
 		{
+			width:100%;
 			min-height: 200px;
 			padding-top: 60px;
 			padding-bottom: 40px;
@@ -888,7 +925,7 @@ img.img-responsive {
 
 
   .student-price {
-    width: 100%;
+    width: 20%;
     font-size: 35px;
     text-align: center;
     background-color: #4285f4;
@@ -896,16 +933,25 @@ img.img-responsive {
 }
   .ticket-student{
 	
-   display: block;
+   display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: opensand-extrabold;
 	text-align: center;
-    font-size: 35px;
-    background: url('https://i.ytimg.com/vi/_TVMVbTC0U0/maxresdefault.jpg');
+    font-size: 30px;
+	background: linear-gradient( rgba(255,255,255, 0.7), rgba(255,255,255, 0.7) ), url(../images/bg-ticket.png);
     background-size: contain;
     background-position: center;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.11);}
+
+#discount{
+	padding-top:40px;
+}
+
+.ticket-student b {
+	color: #4285f4;
+	padding: 50px;
+}
 	a.xemthem {
 		text-decoration: none;
 		color: white;
