@@ -17,21 +17,27 @@ body
 }
 
 .btndk2 btn {
-    background: #df814a;
+	background: #df814a;
+	text-align:center;
 }
 
 .btndk3 {
-    margin-left: 90px;
+	margin-top: -80px;
+	text-align:center;
 }
-
+.btndk2 {
+	margin-top: -80px;
+	align:center;
+}
 .btndk1 {
-    margin-right: 150px;
+	margin-top: -80px;
+	margin-left: 30px;
 }
 
 body#top {}
 
 .thongtinsukien {
-    margin-left: 810px;
+    margin-left: 400px;
 }
 
 .newsimage img {
@@ -407,7 +413,7 @@ transition: all 0.4s ease-in-out;
 	}
 	.dangky{
 	margin-bottom: 200px;
-	margin-left: -1500px;
+	margin-left: -900px;
 	}
 #home .btn:hover
 	{
