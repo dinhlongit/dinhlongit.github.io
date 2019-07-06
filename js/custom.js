@@ -19,8 +19,8 @@
 		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 			 
 			// format countdown string + set tag value
-			countdown.innerHTML = '<span class="days">' + days + ' :&#160;' +  ' <label> Days</label></span> <span class="hours">' + hours + '&#160;:&#160;' +' <label> Hours</label></span> <span class="minutes">'
-			+ minutes+ ' :&#160;' + ' <label> Minutes</label></span> <span class="seconds">' + seconds + '<label>Seconds</label></span>';  
+			countdown.innerHTML = '<span class="days">' + days + ' :&#160;' +  ' <label class="tieude"> Days</label></span> <span class="hours">' + hours + '&#160;:&#160;' +' <label class="tieude"> Hours</label></span> <span class="minutes">'
+			+ minutes+ ' :&#160;' + ' <label class="tieude"> Minutes</label></span> <span class="seconds">' + seconds +'&#160;'+ '<label class="tieude">Seconds</label></span>';  
 		 
 		}, 1000);
 $(function(){

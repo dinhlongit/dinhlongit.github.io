@@ -3,8 +3,8 @@
 	<head>
 			<meta charset="utf-8">
 		<title>HUE HALF MARATHON</title>
-		<meta name="keywords" content="">
-		<meta name="description" content="">
+		<meta name="keywords" content="Hue Half Marathon 2019">
+		<meta name="description" content="Hue Half Marathon 2019">
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -24,7 +24,37 @@
 
 		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 
-		
+
+		<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript">
+ $(document).ready(function()
+ { 
+   var submit = $("input[type='submit']");
+   submit.click(function()
+               {
+                  var data = $('form#formlienhe').serialize();
+                  $.ajax({
+                            type : 'GET', 
+                            url : '	https://script.google.com/macros/s/AKfycbyamAItrawOBZ68qEDOU85xTCkgmG69a-kxdF4D8QUBuCY33fc/exec',
+                            dataType:'json',
+                            crossDomain : true,
+                            data : data,
+                            success : function(data)
+                          { 
+                  if(data == 'false') 
+                          {
+                             alert('Chúng tôi sẽ phản hồi lại sớm nhất !');
+                          }else{
+                             alert('Chúng tôi sẽ phản hồi lại sớm nhất !');
+                          }
+               }
+    });
+    return false;
+   });
+ });
+</script>
+
+	
 	
 
 	</head>
@@ -243,7 +273,7 @@
 		
 
 				<section id="about">
-						<div class="container">
+						<div class="container-fluid">
     <div class="row">
 		<div class="col-md-4 col-sm-4 col-xs-4">
 				<div align="center" class="btndk1" >
@@ -309,7 +339,7 @@
     				</div>
     				<div class="col-md-4 col-sm- col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.3s">
     					<div class="team-wrapper">
-    						<img src="images/member-1.jpg" class="img-responsive" alt="team img 1">
+    						<img src="images/member-1.jpg" class="img-responsive" alt="Hue Half Marathon 2019">
     							<div class="team-des">
     								<h4>ĐƯỜNG CHẠY 5KM</h4>
     								<span>Đường chạy “Fun run” dành cho mọi lứa tuổi muốn thử sức với chạy bộ</span>
@@ -331,7 +361,7 @@
     				</div>
     				<div class="col-md-4 col-sm-4 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.3s">
     					<div class="team-wrapper">
-    						<img src="images/member-3.jpg" class="img-responsive" alt="team img 3">
+    						<img src="images/member-3.jpg" class="img-responsive" alt="Hue Half Marathon 2019">
     							<div class="team-des">
     								<h4>ĐƯỜNG CHẠY 21KM</h4>
     								<span>Đường chạy ưa chuộng của những người đam mê chạy đường dài.</span>
@@ -356,7 +386,7 @@
 							<div  class="student-title"><b> GIÀNH CHO ĐỐI TƯỢNG CHUNG</b></div>
 							<div class="student-price">
 								<div  class="btndk">
-									<a class="btn btn-warning" href="#discount">ĐĂNG KÝ NGAY</a>
+									<a class="btn btn-warning" href="https://bigtime.vn/hue-half-marathon-2019-4132?fbclid=IwAR2z2c0C7N5dMl87zY-lxs9fo3tDWVe9wo3eZN8b1Euqo5hKw3dEowrtUWs">ĐĂNG KÝ NGAY</a>
 									</div>
 			
 			
@@ -425,21 +455,21 @@
 					<div class="row">
     				<div class="col-md-4 col-sm-12 col-xs-12 active wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
     					<div class="giainhi" align="center">
-    					<img  class="img-responsive" src="images/Hue-Marathon-3.jpg" ></img>
+    					<img  class="img-responsive" src="images/Hue-Marathon-3.jpg" alt="Hue Half Marathon 2019" ></img>
 						</div>
     					<h4  align="center">GIẢI CHẠY HUẾ HALF MARATHON CHÍNH THỨC KHỞI ĐỘNG</h4>
     					
     				</div>
     				<div class="col-md-4 col-sm-12 col-xs-12 active wow fadeIn" data-wow-offset="50" data-wow-delay="0.9s">
 					<div class="giainhat" align="center">
-    					<img  class="img-responsive" src="images/Hue-Marathon-2.jpg" ></img>
+    					<img  class="img-responsive" src="images/Hue-Marathon-2.jpg" alt="Hue Half Marathon 2019"></img>
 						</div>
     					<h4 align="center">NGƯỜI HUẾ VÀ NIỀM ĐAM MÊ CHẠY BỘ</h4>
     					
     				</div>
     				<div class="col-md-4 col-sm-12 col-xs-12 active wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
     					<div  class="giaiba" align="center">
-    					<img class="img-responsive" src="images/Hue-Marathon-3.jpg" ></img>
+    					<img class="img-responsive" src="images/Hue-Marathon-3.jpg" alt="Hue Half Marathon 2019"></img>
 						</div>
     					<h4  align="center"> HƠN 1.300 VẬN ĐỘNG VIÊN THAM GIA CUỘC THI HUẾ HALF MARATHON 2019</h4>
     					
@@ -463,7 +493,7 @@
 					<div class="row">
     				<div class="col-md-2 col-sm-4 col-xs-4 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
                         <div class="portfolio-thumb">
-                           <img src="images/ntr_1.jpg" class="img-responsive" alt="portfolio img 2">
+                           <img src="images/ntr_1.jpg" class="img-responsive" alt="Nhà Tài Trợ Hue Half Marathon 2019">
                                 <div class="portfolio-overlay">
                                     <h4>FLY ADS</h4>
                                     <p>Nhà tài trợ</p>
@@ -474,7 +504,7 @@
 					
     				<div class="col-md-2 col-sm-4 col-xs-4 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
                         <div class="portfolio-thumb">
-                           <img src="images/ntr_2.jpg" class="img-responsive" alt="portfolio img 2">
+                           <img src="images/ntr_2.jpg" class="img-responsive" alt="Nhà Tài Trợ Hue Half Marathon 2019">
                                 <div class="portfolio-overlay">
                                     <h4>FLY ADS</h4>
                                     <p>Nhà tài trợ</p>
@@ -485,7 +515,7 @@
 				
                     <div class="col-md-2 col-sm-4 col-xs-4 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
                         <div class="portfolio-thumb">
-                           <img src="images/ntr_3.jpg" class="img-responsive" alt="portfolio img 3">
+                           <img src="images/ntr_3.jpg" class="img-responsive" alt="Nhà Tài Trợ Hue Half Marathon 2019">
                                 <div class="portfolio-overlay">
                                     <h4>CAO ĐẲNG CÔNG NGHIỆP HUẾ</h4>
                                     <p>Nhà tài trợ</p>
@@ -495,30 +525,30 @@
                     </div>
                     <div class="col-md-2 col-sm-4 col-xs-4 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
                         <div class="portfolio-thumb">
-                           <img src="images/ntr_4.jpg" class="img-responsive" alt="portfolio img 4">
+                           <img src="images/ntr_4.jpg" class="img-responsive" alt="Nhà Tài Trợ Hue Half Marathon 2019">
                                 <div class="portfolio-overlay">
                                     <h4>NHÃN HÀNG THE PIZZA</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                                    <p>Nhà Tài Trợ Hue Half Marathon 2019.</p>
                                     <a href="#" class="btn btn-default">DETAIL</a>
                                 </div>
                         </div>
                     </div>
                     <div class="col-md-2 col-sm-4 col-xs-4 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
                         <div class="portfolio-thumb">
-                           <img src="images/ntr_5.jpg" class="img-responsive" alt="portfolio img 3">
+                           <img src="images/ntr_5.jpg" class="img-responsive" alt="Nhà Tài Trợ Hue Half Marathon 2019">
                                 <div class="portfolio-overlay">
                                     <h4>Project Five</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                                    <p>Nhà Tài Trợ Hue Half Marathon 2019</p>
                                     <a href="#" class="btn btn-default">DETAIL</a>
                                 </div>
                         </div>
                     </div>
                     <div class="col-md-2 col-sm-4 col-xs-4 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
                         <div class="portfolio-thumb">
-                           <img src="images/ntr_6.jpg" class="img-responsive" alt="portfolio img 4">
+                           <img src="images/ntr_6.jpg" class="img-responsive" alt="Nhà Tài Trợ Hue Half Marathon 2019">
                                 <div class="portfolio-overlay">
                                     <h4>Project Six</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                                    <p>Nhà Tài Trợ Hue Half Marathon 2019.</p>
                                     <a href="#" class="btn btn-default">DETAIL</a>
                                 </div>
                         </div>
@@ -527,10 +557,10 @@
 				<div class="row">
                     <div class="col-md-2 col-sm-4 col-xs-4 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
                         <div class="portfolio-thumb">
-                           <img src="images/ntr_7.jpg" class="img-responsive" alt="portfolio img 1">
+                           <img src="images/ntr_7.jpg" class="img-responsive" alt="Nhà Tài Trợ Hue Half Marathon 2019">
                                 <div class="portfolio-overlay">
-                                    <h4>Project Seven</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                                    <h4>Nhà Tài Trợ </h4>
+                                    <p>Nhà Tài Trợ Hue Half Marathon 2019</p>
                                     <a href="#" class="btn btn-default">DETAIL</a>
                                 </div>
                         </div>
@@ -539,8 +569,8 @@
                         <div class="portfolio-thumb">
                            <img src="images/ntr_6.jpg" class="img-responsive" alt="portfolio img 2">
                                 <div class="portfolio-overlay">
-                                    <h4>Project Eight</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                                    <h4>Nhà Tài Trợ </h4>
+                                    <p>Nhà Tài Trợ Hue Half Marathon 2019</p>
                                     <a href="#" class="btn btn-default">DETAIL</a>
                                 </div>
                         </div>
@@ -549,8 +579,8 @@
 							<div class="portfolio-thumb">
 							   <img src="images/ntr_8.jpg" class="img-responsive" alt="portfolio img 2">
 									<div class="portfolio-overlay">
-										<h4>Project Eight</h4>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+										<h4>Nhà Tài Trợ Hue Half Marathon 2019.</h4>
+										<p>Nhà Tài Trợ Hue Half Marathon 2019.</p>
 										<a href="#" class="btn btn-default">DETAIL</a>
 									</div>
 							</div>
@@ -559,8 +589,8 @@
 								<div class="portfolio-thumb">
 								   <img src="images/ntr_9.jpg" class="img-responsive" alt="portfolio img 2">
 										<div class="portfolio-overlay">
-											<h4>Project Eight</h4>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+											<h4>Nhà Tài Trợ Hue Half Marathon 2019</h4>
+											<p>Nhà Tài Trợ Hue Half Marathon 2019</p>
 											<a href="#" class="btn btn-default">DETAIL</a>
 										</div>
 								</div>
@@ -569,8 +599,8 @@
 									<div class="portfolio-thumb">
 									   <img src="images/ntr_10.jpg" class="img-responsive" alt="portfolio img 2">
 											<div class="portfolio-overlay">
-												<h4>Project Eight</h4>
-												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+												<h4>Nhà Tài Trợ Hue Half Marathon 2019</h4>
+												<p>Nhà Tài Trợ Hue Half Marathon 2019.</p>
 												<a href="#" class="btn btn-default">DETAIL</a>
 											</div>
 									</div>
@@ -579,8 +609,8 @@
 										<div class="portfolio-thumb">
 										   <img src="images/ntr_11.jpg" class="img-responsive" alt="portfolio img 2">
 												<div class="portfolio-overlay">
-													<h4>Project Eight</h4>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+													<h4>Nhà Tài Trợ Hue Half Marathon 2019</h4>
+													<p>Nhà Tài Trợ Hue Half Marathon 2019.</p>
 													<a href="#" class="btn btn-default">DETAIL</a>
 												</div>
 										</div>
@@ -601,7 +631,7 @@
 							</h2>
     				</div>
     				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.9s">
-    					<form class="formlienhe" method="GET" action="">
+    					<form id="formlienhe" method="GET" action="">
     						<label>HỌ VÀ TÊN : </label>
     						<input name="Ho_Va_Ten" type="text" class="form-control" id="fullname">
    						  	

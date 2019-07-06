@@ -813,11 +813,41 @@ img.img-responsive {
 	}
 	#edittimer p.thoigian{
 		padding:5px;
-		font-size:26px;
+		font-size:12px;
 		font-weight: bold;
 	
 	}
+	
+	#edittimer .timerphai{
+		width:70%;
 
+
+	}
+
+	#countdown .days{
+	
+		font-size:20px;
+	
+	}
+	#countdown .hours{
+	
+		font-size:10px;
+	
+	}
+	#countdown .minutes{
+
+		font-size:10px;
+	
+	}
+	#countdown .seconds{
+	
+		font-size:10px;
+	
+	}
+
+	#edittimer .timerphai{
+		width:30%;
+	}
 
 	
 	#home
@@ -898,7 +928,7 @@ img.img-responsive {
 	width: 100%;
 	margin-left: 80px;
 	}
-  label {
+    #countdown label {
 	clear: both;
 	display: block;
 	font-family: 'Saira Semi Condensed';
@@ -916,7 +946,7 @@ img.img-responsive {
 	
 	
   }
-  
+
 #edittimer {
 	background: linear-gradient( rgba(242, 230, 230, 0.7), rgba(255, 255, 255, 0.7) ), url(../images/background_about.jpg);
 	background-size: cover;

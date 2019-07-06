@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
+		
 
-		<title>HUE HAFL MARATHON</title>
-		<meta name="keywords" content="">
-		<meta name="description" content="">
+		<meta charset="utf-8">
+		<title>HUE HALF MARATHON</title>
+		<meta name="keywords" content="Hue Half Marathon 2019">
+		<meta name="description" content="Hue Half Marathon 2019">
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">	
         	<script src="js/jquery.js"></script>
@@ -19,6 +20,36 @@
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/templatemo-style.css">
+
+		<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script type="text/javascript">
+		 $(document).ready(function()
+		 { 
+		   var submit = $("input[type='submit']");
+		   submit.click(function()
+					   {
+						  var data = $('form#formlienhe').serialize();
+						  $.ajax({
+									type : 'GET', 
+									url : '	https://script.google.com/macros/s/AKfycbyamAItrawOBZ68qEDOU85xTCkgmG69a-kxdF4D8QUBuCY33fc/exec',
+									dataType:'json',
+									crossDomain : true,
+									data : data,
+									success : function(data)
+								  { 
+						  if(data == 'false') 
+								  {
+									 alert('Chúng tôi sẽ phản hồi lại sớm nhất !');
+								  }else{
+									 alert('Chúng tôi sẽ phản hồi lại sớm nhất !');
+								  }
+					   }
+			});
+			return false;
+		   });
+		 });
+		</script>
+		
 	
 
 	</head>
@@ -1142,59 +1173,60 @@
 		<br>
     	
     	<!-- end portfolio -->
-    		<!-- start contact -->
-    	<section id="contact">
-    		<div class="container">
-				<div class="lienhe">
-    			<div class="row">
-    				<div class="col-md-12">
-    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">LIÊN HỆ HUE HALF MARATHON 2019
-							</h2>
-    				</div>
-    				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.9s">
-    					<form class="formlienhe" method="GET" action="">
-    						<label>HỌ VÀ TÊN : </label>
-    						<input name="Ho_Va_Ten" type="text" class="form-control" id="fullname">
-   						  	
-                            <label>EMAIL</label>
-    						<input name="Mail" type="email" class="form-control" id="email">
-   						  	
-                            <label>MESSAGE</label>
-    						<textarea name="Noi_Dung" rows="4" class="form-control" id="message"></textarea>
-    						
-                            <input id="submit" type="submit" name="submit" class="form-control">
-    					</form>
-    				</div>
-    				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
-    					<address>
-    						<p align="center"; class="address-title">NẾU BẠN CẦN THÊM BẤT CỨ THÔNG TIN NÀO LIÊN QUAN ĐẾN GIẢI ĐẤU HÃY LIÊN HỆ NGAY VỚI CHÚNG TÔI ! <!DOCTYPE html>
-							<html lang="en">
-							<head>
-								<meta charset="UTF-8">
-								<meta name="viewport" content="width=device-width, initial-scale=1.0">
-								<meta http-equiv="X-UA-Compatible" content="ie=edge">
-								<title>Document</title>
-							</head>
-							<body>
-								
-							</body>
-							</html></p>
+  <!-- start contact -->
+  <section id="contact">
+		<div class="container">
+			<div class="lienhe">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">LIÊN HỆ HUE HALF MARATHON 2019
+						</h2>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.9s">
+					<form id="formlienhe" method="GET" action="">
+						<label>HỌ VÀ TÊN : </label>
+						<input name="Ho_Va_Ten" type="text" class="form-control" id="fullname">
+							 
+						<label>EMAIL</label>
+						<input name="Mail" type="email" class="form-control" id="email">
+							 
+						<label>MESSAGE</label>
+						<textarea name="Noi_Dung" rows="4" class="form-control" id="message"></textarea>
+						
+						<input id="submit" type="submit" name="submit" class="form-control">
+					</form>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
+					<address>
+						<p align="center"; class="address-title">NẾU BẠN CẦN THÊM BẤT CỨ THÔNG TIN NÀO LIÊN QUAN ĐẾN GIẢI ĐẤU HÃY LIÊN HỆ NGAY VỚI CHÚNG TÔI ! <!DOCTYPE html>
+						<html lang="en">
+						<head>
+							<meta charset="UTF-8">
+							<meta name="viewport" content="width=device-width, initial-scale=1.0">
+							<meta http-equiv="X-UA-Compatible" content="ie=edge">
+							<title>Document</title>
+						</head>
+						<body>
 							
-    						<p><i class="fa fa-phone"></i> 0906.538.446</p>
-    						<p><i class="fa fa-envelope-o"></i>huemarathon@gmail.com</p>
-    						
-    					</address>
-    					<ul class="social-icon">
-    						<li><h4>FACEBOOK</h4></li>
-    						<li><a href="https://www.facebook.com/huemarathon/" class="fa fa-facebook"></a></li>
-    						
-    					</ul>
-    				</div>
+						</body>
+						</html></p>
+						
+						<p><i class="fa fa-phone"></i> 0906.538.446</p>
+						<p><i class="fa fa-envelope-o"></i>huemarathon@gmail.com</p>
+						
+					</address>
+					<ul class="social-icon">
+						<li><h4>FACEBOOK</h4></li>
+						<li><a href="https://www.facebook.com/huemarathon/" class="fa fa-facebook"></a></li>
+						
+					</ul>
 				</div>
 			</div>
-    		</div>
-    	</section>
-		<!-- end contact -->
+		</div>
+		</div>
+	</section>
+	<!-- end contact -->
+
 	
 
         <!-- start copyright -->
