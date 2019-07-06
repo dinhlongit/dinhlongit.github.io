@@ -311,10 +311,9 @@ header .social-icon li a
 	}
 
 .navbar-default .navbar-brand
-	{	
-		background: url('../images/logo.png') no-repeat;
-		width: 100px;
-		height: 70px;
+	{
+		background: url('../images/logofinal.png') no-repeat;
+		height: 71px;
 		line-height: 100px;
 		padding: 0px 0px 0px 0px;
 	}
