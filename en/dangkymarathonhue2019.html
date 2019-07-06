@@ -30,50 +30,7 @@
   <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="css/direction-reveal.css">
   <link rel="stylesheet" type="text/css" href="css/style_2019.css">
-  <style>
-
-
-    /* The Modal (background) */
-    .modal {
-      display: none; /* Hidden by default */
-      position: fixed; /* Stay in place */
-      z-index: 1; /* Sit on top */
-      padding-top: 100px; /* Location of the box */
-      left: 0;
-      top: 0;
-      width: 100%; /* Full width */
-      height: 100%; /* Full height */
-      overflow: auto; /* Enable scroll if needed */
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    }
-    
-    /* Modal Content */
-    .modal-content {
-      background-color: #fefefe;
-      margin: auto;
-      padding: 20px;
-      border: 1px solid #888;
-      width: 80%;
-    }
-    
-    /* The Close Button */
-    .close {
-      color: #aaaaaa;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
-    }
-    
-    .close:hover,
-    .close:focus {
-      color: #000;
-      text-decoration: none;
-      cursor: pointer;
-    }
-    </style>
-
-
+  
   
   
   
@@ -96,7 +53,7 @@ if ((time.getDate() + 1).toString().length == 1) {
 var time_now = getDate + "/" + getMonth + "/" + getYear;
    $('#test1').val(time_now);
 $('#test1').hide();
-$('#myBtn').hide();
+
 
 
 });
@@ -157,24 +114,7 @@ if ($('#masv').val() == ''){
 checkvalid = 0;
 }
 			   if (checkvalid==1){
-          $(document).ready(function(){     
-            var culy = $('#priceRule').val().trim();
-            var ten = $('#fullname').val();
-            var ngaysinh = $('#birthday').val();
-            var sizeao = $('#shirtRule').val();
-            var tongtien;     
-            if (culy=='5KM') tongtien = '145.000 VNĐ'
-            if (culy=='10KM') tongtien = '295.000 VNĐ'
-            if (culy=='21KM') tongtien = '395.000 VNĐ'
-            
-            $('#culydangky').text(culy);
-            $('#hoten').text(ten);
-            $('#ngaysinh').text(ngaysinh);
-            $('#coao').text(sizeao);
-            $('#chiphi').text(tongtien);
-            $('#chiphi1').text(tongtien);
 			   
-});
 			   
                   var data = $('form#commentForm').serialize();
                   $.ajax({
@@ -189,7 +129,8 @@ checkvalid = 0;
                           {
                              alert('Đăng Ký Chưa Thành Công ! Vui Lòng Thử Lại Hoặc Gọi Điện Cho Chúng Tôi!');
                           }else{
-                            $( "#myBtn" ).click();
+                             alert('Bạn Đã Đăng Ký Thành Công ! Cảm ơn bạn!');
+							 location.href="./";
                           }
                }
     });
@@ -209,104 +150,6 @@ checkvalid = 0;
 </script>
 </head>
 <body>
-    <button id="myBtn">Open Modal</button>
-
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-                <div class="container-fluid">
-              <div class="form-marathon">
-                <div class="container">
-                  <div class="text-center title-form" id="tabRegister">CHÚC MỪNG BẠN ĐÃ ĐĂNG KÝ THÀNH CÔNG !</div>
-                  <div class="row" style="border-radius: 5px;">     
-              </div>
-            </div>
-                </div>
-                  </div>
-              <div class="container">  
-              <div class="thongtin">
-              <h2 align="center">THÔNG TIN ĐĂNG KÝ CỦA BẠN NHƯ SAU: </h2>  
-              <br>
-              <ul>
-            
-               <li> Cự Ly Đăng Ký:
-              <b id="culydangky"></b>
-              </li> 
-            <li> Họ Tên:
-              <b id="hoten"></b>
-             </li>
-            <li> Quốc Tịch:
-              <b id="quoctich">Việt Nam</b>
-            </li>
-            <li>Ngày Sinh:
-              <b id="ngaysinh"></b>
-            </li>
-            <li>Size Áo:
-              <b id="coao"></b>
-            </li>
-            <li>Tổng Mức Phí:
-              <b id="chiphi"></b>
-             </li>
-              </ul>
-              <br>
-               <h3 align="center">THANH TOÁN PHÍ ĐĂNG KÝ HUE HALF MARATHON 2019</h3>  
-               <p align="center"><strong>Vui lòng chuyển khoản đúng số tiền: <b id="chiphi1"></b> trong vòng 72h đến 1 trong các tài khoản ngân hàng sau:</strong></p>
-               <br>
-          <p>1. Ngân hàng TMCP Ngoại thương Việt Nam Vietcombank- Chi nhánh Huế</p>
-          <p><b><strong>STK:</b></strong> 0161001727754, Chủ tài khoản : Công ty TNHH MTV Huế Năng Động</p>
-          2. Ngân hàng TMCP Việt Nam Thịnh Vượng VPBank - Chi nhánh Huế</p>
-          <p><b><strong>STK:</b></strong> 154452378, Chủ tài khoản : Công ty TNHH MTV Huế Năng Động</p>
-            
-          
-           <br>
-          
-          <p>Nếu bạn là học sinh, sinh viên : </p>
-          <p><b><strong>Bạn đăng ký được giảm giá 50%</b></strong> , ngày 28/9/2019 khi nhận kit bạn vui lòng mang theo giấy tờ chứng mình là học sinh/sinh viên</p>
-          <p><b><strong>* Sau Khi Nhận Được Phí Đăng Ký, BTC Sẽ Gửi Email Xác Nhận Đăng Ký Thành Công Trong Vòng 24h.</b></strong> </p>
-          <p>Thông tin chi tiết sẽ được cập nhật thường xuyên tại website sự kiện.</p>   
-           <hr>     
-           <p align="center">Hue Marathon được tổ chức tại thành phố Huế mộng mơ, thành phố xanh, sạch với lối sống lành mạnh bậc nhất Việt Nam, thành phố của di sản và văn hóa chào đón bạn.</p>
-          <h4 align="center">HUE MARATHON TEAM</h4>
-          
-           </div>
-          
-            </div>
-      </div>
-    
-    </div>
-    
-    <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-    
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
-    
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-    
-    // When the user clicks the button, open the modal 
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }
-    
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-    
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-      if (event.target == modal) {
-      
-      }
-    }
-    </script>
-
-
-
 <form id="commentForm" name="commentForm" method="GET" action="" class="mb-0">
 
  
@@ -326,9 +169,9 @@ checkvalid = 0;
                       <i>▼</i>
                       <select class="form-control" id="priceRule" name="Cu_Ly" required="">
 					
-					  					  <option>5KM</option>
-                                          <option>10KM</option>
-                                          <option>21KM</option></select>
+					  					  <option>Cự ly 5KM</option>
+                                          <option>Cự ly 10KM</option>
+                                          <option>Cự ly 21KM</option></select>
 
                     </div>
                     <p id="validatePrice" class="text-danger validate-text-form" style="display: none;">Trường Cự Ly là bắt buộc</p>
