@@ -313,8 +313,9 @@ header .social-icon li a
 .navbar-default .navbar-brand
 	{
 		background: url('../images/logofinal.png') no-repeat;
-		height: 71px;
+		height: 80px;
 		line-height: 100px;
+		margin-top: -5px;
 		padding: 0px 0px 0px 0px;
 	}
 	.logo{
@@ -411,7 +412,7 @@ padding-top: 10px;
 transition: all 0.4s ease-in-out;
 	}
 	.dangky{
-	margin-bottom: 200px;
+	margin-bottom: 160px;
 	margin-left: -900px;
 	}
 #home .btn:hover
