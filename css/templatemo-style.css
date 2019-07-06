@@ -145,6 +145,13 @@ a {
 	color: #ffffff;
 }
 
+#thongtinsukien .nav>li>a {
+    font-weight: bold;
+    position: relative;
+    display: block;
+    padding: 10px 10px;
+}
+
 a:hover {
     text-decoration: none;
 }
