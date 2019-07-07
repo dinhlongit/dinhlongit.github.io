@@ -189,7 +189,11 @@ checkvalid = 0;
                           {
                              alert('Đăng Ký Chưa Thành Công ! Vui Lòng Thử Lại Hoặc Gọi Điện Cho Chúng Tôi!');
                           }else{
+                            
                             $( "#myBtn" ).click();
+                            $(document).ready(function(){
+$("#commentForm")[0].reset();
+});
                           }
                }
     });
