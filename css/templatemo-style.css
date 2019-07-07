@@ -46,13 +46,16 @@ body#top {}
 }
 
 .checkin u {
+    font-family: serif;
     text-decoration: none;
     font-weight: bold;
     font-size: x-large;
 }
 
 .checkin b {
+    font-family: cursive;
     color: #0688fa;
+    font-style: normal;
 }
 
 .checkin {
