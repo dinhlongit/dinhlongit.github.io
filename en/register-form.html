@@ -1,0 +1,654 @@
+
+<!doctype html>
+<html lang="vi" xmlns:fb="http://ogp.me/ns/fb#"> 
+<head>
+    
+		<meta charset="utf-8">
+		<title>HUE HALF MARATHON</title>
+		<meta name="keywords" content="Hue Half Marathon 2019">
+		<meta name="description" content="Hue Half Marathon 2019">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">	
+        	<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.singlePageNav.min.js"></script>
+		<script src="js/typed.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/custom.js"></script>	
+		<link rel="stylesheet" href="css/animate.min.css">	
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+	
+		
+		
+  <link rel="stylesheet" href="css/bootstrap-material-design.min.css">
+  <link rel="stylesheet" type="text/css" href="css/fontawesome-v5-all.css">
+  <link rel="stylesheet" type="text/css" href="css/hover.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome-animation.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="css/direction-reveal.css">
+  <link rel="stylesheet" type="text/css" href="css/style_2019.css">
+  <style>
+
+
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Modal Content */
+    .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+    
+    /* The Close Button */
+    .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    </style>
+
+
+  
+  
+  
+  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+var time = new Date();
+var getYear = time.getFullYear();
+if ((time.getMonth() + 1).toString().length == 1) {
+  var getMonth = "0" + (time.getMonth() + 1);
+} else {
+  var getMonth = (time.getMonth() + 1);
+}
+if ((time.getDate() + 1).toString().length == 1) {
+  var getDate = "0" + time.getDate();
+} else {
+  var getDate = time.getDate();
+}
+var time_now = getDate + "/" + getMonth + "/" + getYear;
+   $('#test1').val(time_now);
+$('#test1').hide();
+$('#myBtn').hide();
+
+
+});
+
+
+
+
+function isEmail(email) {
+	var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	return regex.test(email);
+}
+//
+function makeid() {
+	var text = "";
+	var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+	for (var i = 0; i < 5; i++)
+		text += possible.charAt(Math.floor(Math.random() * possible.length));
+	return text;
+}
+
+
+
+ $(document).ready(function()
+ { 
+   var submit = $("button[type='submit']");
+   submit.click(function()
+               {	
+var checkvalid = 1;
+
+if ($('#cmnd').val() == ''){
+checkvalid = 0;
+}
+	
+if ($('#phone').val() == ''){
+checkvalid = 0;
+}
+if ($('#fullname').val() == ''){
+checkvalid = 0;
+}
+if ($('#phone').val() == ''){
+checkvalid = 0;
+}
+
+if ($('#email').val() == '') {
+checkvalid = 0;
+
+}else{
+var thisEmail = $(this);
+var validateEmail = isEmail($('#email').val());
+if (validateEmail == false) {
+checkvalid = 0;
+}
+}  
+if ($('#saleRule').val() == ''){
+checkvalid = 0;
+}
+if ($('#masv').val() == ''){
+checkvalid = 0;
+}
+			   if (checkvalid==1){
+          $(document).ready(function(){     
+            var culy = $('#priceRule').val().trim();
+            var ten = $('#fullname').val();
+            var ngaysinh = $('#birthday').val();
+            var sizeao = $('#shirtRule').val();
+            var tongtien;     
+            if (culy=='5KM') tongtien = '145.000 VNĐ'
+            if (culy=='10KM') tongtien = '295.000 VNĐ'
+            if (culy=='21KM') tongtien = '395.000 VNĐ'
+            
+            $('#culydangky').text(culy);
+            $('#hoten').text(ten);
+            $('#ngaysinh').text(ngaysinh);
+            $('#coao').text(sizeao);
+            $('#chiphi').text(tongtien);
+            $('#chiphi1').text(tongtien);
+			   
+});
+			   
+                  var data = $('form#commentForm').serialize();
+                  $.ajax({
+                            type : 'GET', 
+                            url : 'https://script.google.com/macros/s/AKfycbw7XJG2bcxnTrcr8zGVZBsMozPitvcw0V6N2nD6HL-ydIKmTqCv/exec',
+                            dataType:'json',
+                            crossDomain : true,
+                            data : data,
+                            success : function(data)
+                          { 
+                  if(data == 'false') 
+                          {
+                             alert('Đăng Ký Chưa Thành Công ! Vui Lòng Thử Lại Hoặc Gọi Điện Cho Chúng Tôi!');
+                          }else{
+                            $( "#myBtn" ).click();
+                          }
+               }
+    });
+	}else{
+	
+	alert("Vui lòng điền đầy đủ thông tin bắc buộc ");
+	}
+	
+	
+    return false;
+   });
+ });
+	
+ 
+ 
+ 
+</script>
+</head>
+<body>
+    <button id="myBtn">Open Modal</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        
+                <div class="container-fluid">
+              <div class="form-marathon">
+                <div class="container">
+                  <div class="text-center title-form" id="tabRegister">CHÚC MỪNG BẠN ĐÃ ĐĂNG KÝ THÀNH CÔNG !</div>
+                  <div class="row" style="border-radius: 5px;">     
+              </div>
+            </div>
+                </div>
+                  </div>
+              <div class="container">  
+              <div class="thongtin">
+              <h2 align="center">THÔNG TIN ĐĂNG KÝ CỦA BẠN NHƯ SAU: </h2>  
+              <br>
+              <ul>
+            
+               <li> Cự Ly Đăng Ký:
+              <b id="culydangky"></b>
+              </li> 
+            <li> Họ Tên:
+              <b id="hoten"></b>
+             </li>
+            <li> Quốc Tịch:
+              <b id="quoctich">Việt Nam</b>
+            </li>
+            <li>Ngày Sinh:
+              <b id="ngaysinh"></b>
+            </li>
+            <li>Size Áo:
+              <b id="coao"></b>
+            </li>
+            <li>Tổng Mức Phí:
+              <b id="chiphi"></b>
+             </li>
+              </ul>
+              <br>
+               <h3 align="center">THANH TOÁN PHÍ ĐĂNG KÝ HUE HALF MARATHON 2019</h3>  
+               <p align="center"><strong>Vui lòng chuyển khoản đúng số tiền: <b id="chiphi1"></b> trong vòng 72h đến 1 trong các tài khoản ngân hàng sau:</strong></p>
+               <br>
+          <p>1. Ngân hàng TMCP Ngoại thương Việt Nam Vietcombank- Chi nhánh Huế</p>
+          <p><b><strong>STK:</b></strong> 0161001727754, Chủ tài khoản : Công ty TNHH MTV Huế Năng Động</p>
+          2. Ngân hàng TMCP Việt Nam Thịnh Vượng VPBank - Chi nhánh Huế</p>
+          <p><b><strong>STK:</b></strong> 154452378, Chủ tài khoản : Công ty TNHH MTV Huế Năng Động</p>
+            
+          
+           <br>
+          
+          <p>Nếu bạn là học sinh, sinh viên : </p>
+          <p><b><strong>Bạn đăng ký được giảm giá 50%</b></strong> , ngày 28/9/2019 khi nhận kit bạn vui lòng mang theo giấy tờ chứng mình là học sinh/sinh viên</p>
+          <p><b><strong>* Sau Khi Nhận Được Phí Đăng Ký, BTC Sẽ Gửi Email Xác Nhận Đăng Ký Thành Công Trong Vòng 24h.</b></strong> </p>
+          <p>Thông tin chi tiết sẽ được cập nhật thường xuyên tại website sự kiện.</p>   
+           <hr>     
+           <p align="center">Hue Marathon được tổ chức tại thành phố Huế mộng mơ, thành phố xanh, sạch với lối sống lành mạnh bậc nhất Việt Nam, thành phố của di sản và văn hóa chào đón bạn.</p>
+          <h4 align="center">HUE MARATHON TEAM</h4>
+          <br>
+          <div align="center"  class="btndk1" >
+            <a class="btn btn-danger" href="./thong-tin-su-kien.html#thongtinsukien">XEM THÔNG TIN SỰ KIỆN</a>
+            </div>
+           </div>
+          
+            </div>
+      </div>
+    
+    </div>
+    
+    <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+      
+      }
+    }
+    </script>
+
+
+
+<form id="commentForm" name="commentForm" method="GET" action="" class="mb-0">
+
+ 
+  <div class="container-fluid">
+    <div class="form-marathon">
+      <div class="container">
+        <div class="text-center title-form" id="tabRegister">thông tin đăng kí</div>
+        <div class="row" style="border-radius: 5px;">
+          <div class="col-md-5 bg-form"></div>
+          <div class="col-md-7 form-info">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group custom-select-md bmd-form-group is-filled">
+                    <label class="bmd-label-static"><span class="text-danger">*</span> Distance :</label>
+					
+                    <div class="select-md">
+                      <i>▼</i>
+                      <select class="form-control" id="priceRule" name="Cu_Ly" required="">
+					
+					  					  <option>5KM</option>
+                                          <option>10KM</option>
+                                          <option>21KM</option></select>
+
+                    </div>
+                    <p id="validatePrice" class="text-danger validate-text-form" style="display: none;">Trường Cự Ly là bắt buộc</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group bmd-form-group is-filled">
+                    <input type="hidden" id="country" name="country" value="VietNam">
+                    <label class="bmd-label-static"><span class="text-danger">*</span> Email :</label>
+                    <input type="email" class="form-control" id="email" name="Email" required="">
+                    <p id="validateEmail" class="text-danger validate-text-form" style="display: none;">Trường Email là bắt buộc</p>
+                    <p id="validateEmailRule" class="text-danger validate-text-form" style="display: none;">Email không đúng định dạng</p>
+                    <!-- <p id="validateEmailExist" class="text-danger validate-text-form" style="display: none;">Email Đã Tồn Tại</p> -->
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group bmd-form-group is-filled">
+                    <label class="bmd-label-static"><span class="text-danger">*</span> Name :</label>
+                    <input type="text" class="form-control" id="fullname" name="Ho_Ten" required="">
+                    <p id="validateName" class="text-danger validate-text-form" style="display: none;">Trường Họ Tên là bắt buộc</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group bmd-form-group is-filled">
+                    <label class="bmd-label-static"><span class="text-danger">*</span> Birthday (Day/Month/Year) :</label>
+                    <input type="date" id="birthday" name="Ngay_Sinh" maxlength="10" class="form-control" required="">
+                    <p id="validateDate" class="text-danger validate-text-form" style="display: none;">Trường Ngày Sinh là bắt buộc</p>
+                  </div>
+                </div>
+				 <input type="text" class="form-control" id="test1" name="Ngay_Dang_Ky" ></input>
+                <div class="col-sm-6">
+                  <div class="form-group gender-form bmd-form-group is-filled">
+                    <label class="bmd-label-static"><span class="text-danger">*</span> Gender :</label>
+                    <div class="gender-select">
+                      <div id="genderForm" name="Gioi_Tinh">
+                        <div class="radio"><label><input type="radio" name="Gioi_Tinh" id="gender" value="Nam" checked=""><span class="bmd-radio"><div class="ripple-container"></div></span>Male</label></div>
+                        <div class="radio"><label><input type="radio" name="Gioi_Tinh" id="gender" value="Nữ"><span class="bmd-radio"><div class="ripple-container"></div></span>Female</label></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                 <div class="form-group bmd-form-group is-filled">
+                  <label class="bmd-label-static"><span class="text-danger">*</span> Phone Number :</label>
+                  <input type="number" class="form-control" id="phone" name="SDT" maxlength="10" required="">
+                  <p id="validatePhone" class="text-danger validate-text-form" style="display: none;">Trường Điện Thoại là bắt buộc</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group bmd-form-group is-filled">
+                  <label class="bmd-label-static"><span class="text-danger">*</span> Passport Number :</label>
+                  <input type="number" class="form-control" id="cmnd" name="CMND" maxlength="10" required="">
+                  <p id="validateCmnd" class="text-danger validate-text-form" style="display: none;">Trường Chứng Minh Thư là bắt buộc</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group custom-select-md bmd-form-group is-filled">
+                  <label class="bmd-label-static"><span class="text-danger">*</span> Province / City :</label>
+                  <div class="select-md">
+                    <i>▼</i>
+                    <select class="form-control" id="cityList" name="Tinh" required="">
+					  
+                      <option>Thành Phố Huế</option>
+					   <option >Thành phố Hà Nội</option>
+
+    <option >Tỉnh Hà Giang</option>
+
+    <option >Tỉnh Cao Bằng</option>
+
+    <option >Tỉnh Bắc Kạn</option>
+
+    <option >Tỉnh Tuyên Quang</option>
+
+    <option >Tỉnh Lào Cai</option>
+
+    <option>Tỉnh Điện Biên</option>
+
+    <option>Tỉnh Lai Châu</option>
+
+    <option>Tỉnh Sơn La</option>
+
+    <option >Tỉnh Yên Bái</option>
+
+    <option >Tỉnh Hoà Bình</option>
+
+    <option>Tỉnh Thái Nguyên</option>
+
+    <option >Tỉnh Lạng Sơn</option>
+
+    <option >Tỉnh Quảng Ninh</option>
+
+    <option >Tỉnh Bắc Giang</option>
+
+    <option >Tỉnh Phú Thọ</option>
+
+    <option >Tỉnh Vĩnh Phúc</option>
+
+    <option >Tỉnh Bắc Ninh</option>
+
+    <option >Tỉnh Hải Dương</option>
+
+    <option >Thành phố Hải Phòng</option>
+
+    <option >Tỉnh Hưng Yên</option>
+
+    <option >Tỉnh Thái Bình</option>
+
+    <option>Tỉnh Hà Nam</option>
+
+    <option >Tỉnh Nam Định</option>
+
+    <option >Tỉnh Ninh Bình</option>
+
+    <option >Tỉnh Thanh Hóa</option>
+
+    <option >Tỉnh Nghệ An</option>
+
+    <option >Tỉnh Hà Tĩnh</option>
+
+    <option >Tỉnh Quảng Bình</option>
+
+    <option>Tỉnh Quảng Trị</option>
+
+    <option >Thành phố Đà Nẵng</option>
+
+    <option >Tỉnh Quảng Nam</option>
+
+    <option >Tỉnh Quảng Ngãi</option>
+
+    <option >Tỉnh Bình Định</option>
+
+    <option >Tỉnh Phú Yên</option>
+
+    <option >Tỉnh Khánh Hòa</option>
+
+    <option >Tỉnh Ninh Thuận</option>
+
+    <option>Tỉnh Bình Thuận</option>
+
+    <option >Tỉnh Kon Tum</option>
+
+    <option >Tỉnh Gia Lai</option>
+
+    <option >Tỉnh Đắk Lắk</option>
+
+    <option >Tỉnh Đắk Nông</option>
+
+    <option >Tỉnh Lâm Đồng</option>
+
+    <option>Tỉnh Bình Phước</option>
+
+    <option >Tỉnh Tây Ninh</option>
+
+    <option >Tỉnh Bình Dương</option>
+
+    <option >Tỉnh Đồng Nai</option>
+
+    <option>Tỉnh Bà Rịa - Vũng Tàu</option>
+
+    <option >Thành phố Hồ Chí Minh</option>
+
+    <option >Tỉnh Long An</option>
+
+    <option >Tỉnh Tiền Giang</option>
+
+    <option >Tỉnh Bến Tre</option>
+
+    <option >Tỉnh Trà Vinh</option>
+
+    <option >Tỉnh Vĩnh Long</option>
+
+    <option >Tỉnh Đồng Tháp</option>
+
+    <option >Tỉnh An Giang</option>
+
+    <option >Tỉnh Kiên Giang</option>
+
+    <option >Thành phố Cần Thơ</option>
+
+    <option >Tỉnh Hậu Giang</option>
+
+    <option >Tỉnh Sóc Trăng</option>
+
+    <option >Tỉnh Bạc Liêu</option>
+                                
+    <option >Tỉnh Cà Mau</option>
+                    </select>
+					
+                  </div>
+                </div>
+                <p id="validateCity" class="text-danger validate-text-form" style="display: none;">Trường Tỉnh - Thành Phố là bắt buộc</p>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group bmd-form-group is-filled">
+                  <label class="bmd-label-static"><span class="text-danger">*</span> Address :</label>
+                  <input type="text" class="form-control" id="address" name="Dia_Chi" required="">
+                  <p id="validateAddress" class="text-danger validate-text-form" style="display: none;">Trường Địa Chỉ là bắt buộc</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group bmd-form-group is-filled">
+                  <label class="bmd-label-static"><span class="text-danger">*</span> School:</label>
+                  <div class="add-custom-form">
+                    <div class="input-md">
+                      <input type="text" class="form-control" id="saleRule" name="Truong">
+                    </div>
+                    <div class="cr-form text-warning" data-toggle="tooltip" title="" id="saleAgree" data-original-title="Xác nhận mã"></div>
+                  </div>
+                  <p id="validateSaleNull" class="text-danger validate-text-form" style="display: none;">Bạn Chưa Nhập Mã</p>
+                  <p id="validateSale" class="text-danger validate-text-form" style="display: none;">Mã Tham Gia Không Chính Xác</p>
+                </div>
+              </div>
+			  
+			  <div class="col-sm-6">
+                <div class="form-group bmd-form-group is-filled">
+                  <label class="bmd-label-static"><span class="text-danger">*</span> Class :</label>
+                  <input type="text" class="form-control" id="lophoc" name="Lop" required="">
+                  <p id="validateAddress" class="text-danger validate-text-form" style="display: none;">Trường Địa Chỉ là bắt buộc</p>
+                </div>
+              </div>
+			  
+			  <div class="col-sm-6">
+                <div class="form-group bmd-form-group is-filled">
+                  <label class="bmd-label-static"><span class="text-danger">*</span>  Student ID :</label>
+                  <input type="text" class="form-control" id="masv" name="Ma_SV" required="">
+                  <p id="validateAddress" class="text-danger validate-text-form" style="display: none;">Trường Địa Chỉ là bắt buộc</p>
+                </div>
+              </div>
+              
+              <div class="col-sm-6">
+                <div class="form-group custom-select-md bmd-form-group is-filled">
+                  <label class="bmd-label-static">Clothes Size :</label>
+                  <div class="select-md">
+                    <i>▼</i>
+					
+                    <select class="form-control" id="shirtRule" name="Size_Ao">
+					<option id="sizexs">Size XS</option>
+					<option id="sizes">Size S</option>
+					<option id="sizem">Size M</option>
+					<option id="sizel">Size L</option>
+						<option id="sizexl">Size XL</option>
+					</select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group custom-select-md bmd-form-group is-filled">
+                  <label class="bmd-label-static">Group (If have) :</label>
+                  <div class="add-custom-form">
+                    <input type="text" id="groupRule" name="Nhom" class="form-control">
+                   </div>
+                </div>
+              </div>
+            </div>
+            <span class="bmd-form-group is-filled"><div class="checkbox">
+              <label class="label-check-ok" style="color: rgb(38, 38, 38);">
+                <input type="checkbox" id="checkRules" name="checkRules" required=""><span class="checkbox-decorator"><span class="check"></span><div class="ripple-container"></div></span> 
+                I agree with <a href="#" target="_blank"><span class="text-warning"><u><i>Envent Infomations</i></u></span></a> và <a href="#" target="_blank"><span class="text-warning"><u><i>Conditions of participation </i></u></span></a> of the Hue Half Marathon 2019.
+              </label>
+              <label class="label-check-ok-2" style="color: rgb(38, 38, 38);">
+                <input type="checkbox" id="checkRules2" name="checkRules2" required=""><span class="checkbox-decorator"><span class="check"></span><div class="ripple-container"></div></span> I agree to sign the Health Guarantee Commitment <a href="#"><span class="text-warning"><u><i>(</i></u></span></a><u><i><a href="https://huemarathon.com/upload/bancamkettren16t.docx" class="text-warning">Over 16 years old</a> / <a href="https://huemarathon.com/upload/bancamketduoi16t.docx" class="text-warning">Under 16 years old</a>)</i></u> &amp; <a href="#"><span class="text-warning"><u><i></i></u></span></a><u><i><a href="https://huemarathon.com/upload/Camketgiamho.docx" class="text-warning">Guardian Certification</a></i></u> (for athletes under 16 years of age only) when receiving the race kit on September 28 / 2019
+              </label>
+              <p class="text-danger">
+                <b aria-hidden="true">*</b>  Is Required Information
+
+              </p>
+              <p class="text-danger">
+                <b aria-hidden="true">!</b>  Please sign "COMMITMENT OF ELIGIBILITY OF HEALTH TO JOIN HUE HALF MARATHON 2019" on the date of receipt of RACE KIT 28/09/2019
+
+              </p>
+            </div></span>
+          <div class="text-right mt-5">
+            <button type="submit" class="btn btn-warning" id="paymentAfterForm" name="paymentAfterForm">Đăng kí<div class="ripple-container"></div></button>
+            <a href="./index.html/top" class="btn text-danger">quay về</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="modal" id="validateRules">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header cs-modal-header">
+          <h4 class="modal-title">Thông Báo</h4>
+        </div>
+        <div class="modal-body">
+          <p class="text-danger text-center text-warning" style="margin-bottom: 0px;"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> Bạn cần đồng ý với các điều khoản chính sách của Hue Marathon 2019</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn text-danger" data-dismiss="modal">Đóng</button>
+        </div>
+		
+		
+      </div>
+    </div>
+  </div>
+</div>
+
+</form>
+
+
+
+
+
+<a id="back-to-top" href="#" class="back-to-top hvr-float" role="button" title="Click để lên đầu trang" style="display: none;"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/slick.min.js"></script>
+<script src="js/direction-aware.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.easeScroll.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap-material-design.js"></script>
+<script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+<script src="js/custom-2019.js"></script>	
+
+</body>
+</html>
